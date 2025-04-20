@@ -13,27 +13,40 @@
     }
 
     header {
-      padding: 40px 20px;
+      padding: 40px 20px 20px;
       text-align: center;
       background: #000;
     }
 
     header h1 {
       font-size: 32px;
-      margin: 0;
+      margin: 0 0 10px;
       letter-spacing: 2px;
+    }
+
+    header p {
+      margin: 0 0 20px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #00d4ff;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background: #00aacc;
     }
 
     section {
       padding: 40px 20px;
       max-width: 900px;
       margin: auto;
-    }
-
-    .menu img {
-      width: 150px;
-      margin: 10px;
-      border-radius: 8px;
     }
 
     .menu {
@@ -46,6 +59,14 @@
     .menu-item {
       text-align: center;
       width: 160px;
+    }
+
+    .menu img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
     }
 
     h2 {
@@ -73,7 +94,7 @@
     }
 
     .step-icon {
-      font-size: 32px;
+      font-size: 40px;
       margin-bottom: 10px;
     }
 
@@ -86,6 +107,14 @@
       text-decoration: underline;
     }
 
+    @media (max-width: 600px) {
+      .menu-item {
+        width: 100%;
+      }
+      .menu img {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -93,26 +122,27 @@
   <header>
     <h1>ТЁМНАЯ КУХНЯ</h1>
     <p>Доставка роллов. Только вкус и автоматизация.</p>
+    <a href="https://t.me/temnaya_kukhnya_bot" class="button" target="_blank">Заказать в Telegram</a>
   </header>
 
   <section>
     <h2>МЕНЮ РОЛЛОВ</h2>
     <div class="menu">
       <div class="menu-item">
-        <img src="https://via.placeholder.com/150" alt="Филадельфия">
-        <p><strong>Филадельфия</strong><br>Сыр, гац.. ясал</p>
+        <img src="https://i.imgur.com/8UdP0gK.jpg" alt="Филадельфия">
+        <p><strong>Филадельфия</strong><br>Сыр, лосось, огурец</p>
       </div>
       <div class="menu-item">
-        <img src="https://via.placeholder.com/150" alt="Калифорния с крабом">
-        <p><strong>Калифорния с крабом</strong><br>Губумен, авадо, тобико</p>
+        <img src="https://i.imgur.com/J6E5QoN.jpg" alt="Калифорния">
+        <p><strong>Калифорния с крабом</strong><br>Краб, авокадо, тобико</p>
       </div>
       <div class="menu-item">
-        <img src="https://via.placeholder.com/150" alt="Цезарь">
-        <p><strong>Цезарь</strong><br>Свинина, томат соус</p>
+        <img src="https://i.imgur.com/VnL7Q5Y.jpg" alt="Цезарь">
+        <p><strong>Цезарь</strong><br>Курица, томатный соус, салат</p>
       </div>
       <div class="menu-item">
-        <img src="https://via.placeholder.com/150" alt="Филадельфия с угрём">
-        <p><strong>Филадельфия с угрём</strong><br>филадельфия, с угрем</p>
+        <img src="https://i.imgur.com/9Yx0Pzv.jpg" alt="Филадельфия с угрём">
+        <p><strong>Филадельфия с угрём</strong><br>Сыр, лосось, угорь</p>
       </div>
     </div>
   </section>
@@ -145,8 +175,10 @@
 
   <section class="contacts">
     <h2>КОНТАКТЫ</h2>
-    <p>Telegram: <a href="https://t.me/yourbot" target="_blank">@yourbot</a></p>
-    <p>Email: info@temnayakuhnya.ru</p>
+    <p>Telegram: <a href="https://t.me/temnaya_kukhnya_bot" target="_blank">@temnaya_kukhnya_bot</a></p>
+    <p>Email: info@temnayakukhnya.ru</p>
+    <br>
+    <a href="https://t.me/temnaya_kukhnya_bot" class="button" target="_blank">Сделать заказ</a>
   </section>
 
 </body>
